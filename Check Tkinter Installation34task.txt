@@ -1,0 +1,117 @@
+Check Tkinter Installation
+✅ Tkinter comes bundled with Python. You can test it by running:
+
+python
+Copy
+Edit
+import tkinter as tk
+print("Tkinter is working!")
+Create a Basic Window
+✅ Use tk.Tk() to create the main window. It’s the root container of all widgets.
+
+Change Window Title
+✅ Use root.title("My Title") to set or update the title of the window.
+
+Resize the Window
+✅ Use root.geometry("400x300") to set the window size in pixels (width x height).
+
+Add a Label Widget
+✅ The Label widget displays static text or images using:
+
+python
+Copy
+Edit
+tk.Label(root, text="Welcome to Tkinter!").pack()
+Add an Entry Widget
+✅ Use Entry to accept single-line text input from the user.
+
+Add a Button Widget
+✅ Button is used to trigger a function or action when clicked.
+You can create one with: tk.Button(root, text="Click Me").
+
+Get Text from Entry
+✅ Use .get() method:
+
+python
+Copy
+Edit
+value = entry.get()
+Update Label Text
+✅ Use .config(text="new text") to update a label dynamically when a button is clicked.
+
+Create a Multi-line Text Widget
+✅ The Text widget supports multiple lines of input.
+Use: text = tk.Text(root).
+
+Read from Text Widget
+✅ Use .get("1.0", tk.END) to retrieve all text from a Text widget.
+
+Experiment with pack()
+✅ pack() arranges widgets in a block vertically or horizontally.
+
+Experiment with grid()
+✅ grid() arranges widgets in a table (row & column format).
+
+Experiment with place()
+✅ place(x=100, y=50) allows you to position widgets using absolute coordinates.
+
+Mix Layout Managers (pack and grid)
+❌ Avoid mixing pack() and grid() in the same container — it leads to errors or layout issues.
+
+Create a Frame Widget
+✅ A Frame is a container to group widgets together inside a window.
+
+Add Widgets to Frame
+✅ You can place labels, buttons, entries, etc., inside a Frame.
+
+Multiple Frames
+✅ You can create multiple Frames to organize your layout better.
+
+Label Font and Color
+✅ Use font=("Arial", 16) and fg="red" to change the label's appearance.
+
+Button Command
+✅ Use the command parameter to call a function when the button is clicked.
+
+Disable/Enable Button
+✅ Use state="disabled" or "normal" to control a button’s interactivity.
+
+Set Default Entry Text
+✅ Use .insert(0, "default") to pre-fill an Entry.
+
+Clear Entry/Text Widget
+✅ Use .delete(0, END) for Entry and .delete("1.0", END) for Text to clear content.
+
+Window Icon
+✅ Use .iconbitmap("icon.ico") to set a custom icon (Windows only).
+
+Window Resizability
+✅ Use .resizable(False, False) to prevent resizing horizontally and vertically.
+
+Custom Window Size on Startup
+✅ Use .state("zoomed") for maximized or .iconify() to start minimized.
+
+Label with Image
+✅ Load image with PhotoImage(file="image.png") and add to a label using image=....
+
+Entry Validation
+✅ Use .get() and conditional logic to check if input is numeric (e.g., str.isdigit()).
+
+Button with Keyboard Shortcut
+✅ Use .bind("<Return>", function) to trigger a function when the Enter key is pressed.
+
+Text Widget Scrollbar
+✅ Attach a Scrollbar to a Text widget using .config(yscrollcommand=...).
+
+Frame Border and Relief
+✅ Use borderwidth=2 and relief="sunken" to give visual depth to frames.
+
+Pack Side Option
+✅ Use pack(side=LEFT) or pack(side=RIGHT) to align widgets horizontally.
+
+Grid Row/Column Span
+✅ Use columnspan=2 or rowspan=2 to make a widget span multiple rows or columns.
+
+Closing the Window
+✅ Use root.destroy() to programmatically close the Tkinter window (e.g., on button click).
+
